@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android= "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keliling dan Luas Persegi"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#6A5ACD"
+        android:id="@+id/txtsisi"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editSisi"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtsisi"
+        android:layout_alignParentStart="true"
+
+        android:hint="Masukkan Sisi Persegi"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:text="Oke"
+        android:id="@+id/btnOk"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editSisi"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:hint="Luas Persegi"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOk"
+        android:id="@+id/txtluas"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtluas"
+        android:id="@+id/edithasil"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editSisi"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:hint="Keliling Persegi"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edithasil"
+        android:id="@+id/txtkeliling"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtkeliling"
+        android:id="@+id/editkeliling"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editSisi"/>
+
+</RelativeLayout>
